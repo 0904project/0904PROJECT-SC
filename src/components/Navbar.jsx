@@ -1,11 +1,11 @@
-import React, {useEffect, useState,useContext} from 'react'
+import React, {useEffect, useState, useContext} from 'react'
 import StrollerIcon from '@mui/icons-material/Stroller';
 import PersonIcon from '@mui/icons-material/Person';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import {SidebarContext} from "./Sidebar";
 import ListProfile from "./ListProfile.jsx";
 import Notification from "./Notification.jsx";
-
+import {useLocation} from 'react-router-dom';
 
 
 // eslint-disable-next-line react/prop-types
@@ -14,7 +14,9 @@ export default function Navbar() {
     const [buka, setBuka] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
     const [open, setOpen] = useState(false)
-    const {expanded,setExpanded} = useContext(SidebarContext);
+    const {expanded, setExpanded} = useContext(SidebarContext);
+    const location = useLocation();
+    const pathNames = location.pathname.split("/").filter((x) => x);
 
     const toggleMenu = () => {
         // setIsOpen(!isOpen);
@@ -22,7 +24,7 @@ export default function Navbar() {
     }
     useEffect(() => {
         const handleClickOutside = (e) => {
-            if (e.target.id !== 'hamburger' && e.target.id !== 'nav-menu' ) {
+            if (e.target.id !== 'hamburger' && e.target.id !== 'nav-menu') {
                 setIsOpen(false)
             }
         }
@@ -54,27 +56,36 @@ export default function Navbar() {
     return (
         <>
             <header
-                className={`relative bg-slate-100 top-0 left-0 w-full items-center flex  ${isScrolled ? 'navbar-fixed' : ''} `}>
+                className={`fixed bg-slate-100 max:pl-24 top-0 left-0 w-full items-center flex ${expanded ? '' : ''}  ${isScrolled ? 'navbar-fixed lg:pl-24' : ''} `}
+                style={{paddingLeft: expanded ? '18%' : ''}}>
                 <div className="container my-[-8px] ">
-                    <div className="flex justify-between items-center relative">
-                        <div className={'px-20 md:px-80 lg:px-20 max:px-2 bottom-0 '}>
-                            <a href="/" onClick={(e) => {
+                    <div className={`flex justify-between items-center relative`}>
+                        <div className={`px-20 md:px-80 lg:px-20 max:px-2 bottom-0`}>
+                            <a href="/home" onClick={(e) => {
                                 e.preventDefault();
                                 window.scrollTo({top: 0, behavior: 'smooth'});
                                 window.history.pushState({}, '', '/');
                             }}
                                className={'text-primary text-center font-bold text-xl md:text-2xl block py-6 md:hidden'}>0904<span
                                 className={'text-green-600'}>PROJECT</span></a>
-                            <a href="/" onClick={(e) => {
-                                e.preventDefault();
-                                window.scrollTo({top: 0, behavior: 'smooth'});
-                                window.history.pushState({}, '', '/');
-                            }}
-                               className={'text-primary text-center font-bold text-xl md:text-2xl py-6 hidden md:block'}>home</a>
+                            <span
+                                className={`text-primary text-center font-bold text-xl md:text-2xl py-6 hidden md:block capitalize `}>
+                                {pathNames.map((value, index) => {
+                                    const to = `/${pathNames.slice(0, index + 1).join("/")}`;
+                                    const capitalizedValue = value.toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+                                    return (
+                                        <span key={index}>
+                                            <span>{capitalizedValue}</span>
+                                            {index < pathNames.length - 1 && " > "}
+                                        </span>
+                                    );
+                                })}
+                            </span>
                         </div>
                         <div className="flex justify-between items-center mb-2 px-4">
                             <div id={'hamburger'} onClick={toggleMenu}
-                                 className={`block absolute max-w-[36px] max-h-[36px] left-4 lg:hidden ${expanded ? 'hamburger-active z-[10000]' : ''}`}>
+                                 className={`block absolute max-w-[36px] max-h-[36px] left-4 lg:hidden ${expanded ? 'hamburger-active' : ''}`}>
                             <span
                                 className={'hamburger-line origin-top-left transition duration-300 ease-in-out'}></span>
                                 <span className={'hamburger-line transition duration-300 ease-in-out'}></span>
@@ -110,7 +121,13 @@ export default function Navbar() {
             </header>
             <Notification open={open} onClose={() => setOpen(false)} title="COMING SOON">
                 <div className={'flex flex-wrap'}>
-                    <StrollerIcon style={{fontSize:'100px',width:'100%',color:'gray',marginTop:'10px',marginBottom:'10px'}}/>
+                    <StrollerIcon style={{
+                        fontSize: '100px',
+                        width: '100%',
+                        color: 'gray',
+                        marginTop: '10px',
+                        marginBottom: '10px'
+                    }}/>
                 </div>
             </Notification>
         </>
