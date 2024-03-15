@@ -39,6 +39,9 @@ body {
     width: 25px;
 
 }
+.search-mobile {
+    @apply absolute items-center w-[300px] top-10 justify-center right-[-70px]
+}
 .dropProfile::before {
     content: '';
     position: absolute;

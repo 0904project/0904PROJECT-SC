@@ -18,13 +18,13 @@ function App() {
                 <div style={{ display: 'flex', flexDirection: 'row' }}>
                         <Navbar />
                     <Sidebar>
-                        <SidebarItem icon={<Home size={20}/>} text={'Home'} to='/Home'/>
-                        <SidebarItem icon={<Compass size={20}/>} text={'Product'} to='/Product' />
+                        <SidebarItem icon={<Home size={20}/>} text={'Home'} to='/home'/>
+                        <SidebarItem icon={<Compass size={20}/>} text={'Product'} to='/product' />
                         <SidebarItem icon={<Bolt size={20}/>} text={'category'} />
                         <SidebarItem icon={<UsersRound size={20}/>} text={'about'} />
                         <SidebarItem icon={<Send size={20}/>} text={'contact'} />
                     </Sidebar>
-                    <div style={{ flexGrow: 1 }} className={`${expanded ? 'pl-[18%]' : 'pl-0 lg:pl-[80px]' } `}>
+                    <div style={{ flexGrow: 1 }} className={`${expanded ? 'md:pl-[10%] max:pl-[18%] pl-[18%] ' : 'pl-0 lg:pl-[80px]' } `}>
                         <Routes>
                             <Route path="/home" exact Component={LandingPage} />
                             <Route path="/product" exact Component={Product} />
