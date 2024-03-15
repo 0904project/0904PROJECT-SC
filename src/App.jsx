@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Navbar from "./components/Navbar.jsx";
 import Sidebar, {SidebarItem, SidebarContext} from "./components/Sidebar.jsx";
 import {Home,Compass,Bolt,UsersRound,Send} from "lucide-react";
-import LandingPage from "./pages/LandingPage.jsx";
-import Product from "./pages/Product.jsx";
-import DetailProduct from "./pages/DetailProduct.jsx";
+import LandingPage from "./pages/Landing/LandingPage.jsx";
+import Product from "./pages/Product/Product.jsx";
+import DetailProduct from "./pages/Detail/DetailProduct.jsx";
 // import OtherPage from "./pages/OtherPage.jsx";
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
                             <Route path="/home" exact Component={LandingPage} />
                             <Route path="/product" exact Component={Product} />
                             <Route path='/product/detail' exact Component={DetailProduct} />
-                            {/* <Route path="/other" component={OtherPage} /> */}
+                            {/*<Route path="*" element={<NotFoundPage />} />*/}
                         </Routes>
                     </div>
                 </div>
