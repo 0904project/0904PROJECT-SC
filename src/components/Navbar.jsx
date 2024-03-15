@@ -5,12 +5,14 @@ import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import {SidebarContext} from "./Sidebar";
 import ListProfile from "./ListProfile.jsx";
 import Notification from "./Notification.jsx";
-import {useLocation} from 'react-router-dom';
+import {useLocation,Link} from 'react-router-dom';
+import SearchBar from "./SearchBar.jsx";
 
 
 // eslint-disable-next-line react/prop-types
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
+    const [isSearchOpen, setSearchOpen] = useState(false);
     const [buka, setBuka] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
     const [open, setOpen] = useState(false)
@@ -56,7 +58,7 @@ export default function Navbar() {
     return (
         <>
             <header
-                className={`fixed bg-slate-100 max:pl-24 top-0 left-0 w-full items-center flex ${expanded ? '' : ''}  ${isScrolled ? 'navbar-fixed lg:pl-24' : ''} `}
+                className={`fixed bg-slate-100 max:pl-24 top-0  left-0 w-full items-center flex ${expanded ? '' : ''}  ${isScrolled ? 'navbar-fixed ' : ''} `}
                 style={{paddingLeft: expanded ? '18%' : ''}}>
                 <div className="container my-[-8px] ">
                     <div className={`flex justify-between items-center relative`}>
@@ -69,14 +71,16 @@ export default function Navbar() {
                                className={'text-primary text-center font-bold text-xl md:text-2xl block py-6 md:hidden'}>0904<span
                                 className={'text-green-600'}>PROJECT</span></a>
                             <span
-                                className={`text-primary text-center font-bold text-xl md:text-2xl py-6 hidden md:block capitalize `}>
+                                className={`text-primary  text-center font-bold text-xl ${pathNames.length > 0 ? 'py-7' :'py-10'}  hidden md:block capitalize `}>
                                 {pathNames.map((value, index) => {
                                     const to = `/${pathNames.slice(0, index + 1).join("/")}`;
                                     const capitalizedValue = value.toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
                                     return (
-                                        <span key={index}>
-                                            <span>{capitalizedValue}</span>
+                                        <span  key={index}>
+                                            <Link to={to}>
+                                                <span>{capitalizedValue}</span>
+                                            </Link>
                                             {index < pathNames.length - 1 && " > "}
                                         </span>
                                     );
@@ -95,9 +99,10 @@ export default function Navbar() {
                         </div>
                         <div
                             className={'flex items-center bottom-4 justify-center relative cursor-pointer left-14 md:left-[-8%] ipad4:left-[-1%] galaxy:left-[-4%] microsoft2:left-[-0.1rem] galaxy2:left-9 lg:left-[-100%] max:right-1 '}>
-                            <div className={'relative  right-40 items-center justify-center'}>
-                                <i onClick={() => setOpen(true)}
-                                   className={'w-8 h-8 items-center justify-center bg-slate-50 rounded-full p-1 absolute active:bg-slate-300'}>
+                            <div className={'relative flex top-4  right-36 items-center justify-center'}>
+                                <SearchBar isSearchOpen={isSearchOpen}/>
+                                <i onClick={() => setSearchOpen(prev => !prev)}
+                                   className={'w-8 h-8 items-center lg:hidden justify-center bg-slate-50 rounded-full p-1 absolute active:bg-slate-300'}>
                                     <SearchRoundedIcon/>
                                 </i>
                             </div>

@@ -17,6 +17,126 @@ export default function Product() {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
                 officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
                 laboriosam officia voluptatem voluptatibus?
+            </p>            <p>
+                kontol
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur, culpa distinctio dolor
+                dolorem doloribus eos, id illum iusto mollitia, nam neque perspiciatis repudiandae sint. Ipsa nostrum
+                pariatur quaerat?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
+                officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
+                laboriosam officia voluptatem voluptatibus?
+            </p>            <p>
+                kontol
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur, culpa distinctio dolor
+                dolorem doloribus eos, id illum iusto mollitia, nam neque perspiciatis repudiandae sint. Ipsa nostrum
+                pariatur quaerat?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
+                officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
+                laboriosam officia voluptatem voluptatibus?
+            </p>            <p>
+                kontol
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur, culpa distinctio dolor
+                dolorem doloribus eos, id illum iusto mollitia, nam neque perspiciatis repudiandae sint. Ipsa nostrum
+                pariatur quaerat?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
+                officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
+                laboriosam officia voluptatem voluptatibus?
+            </p>            <p>
+                kontol
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur, culpa distinctio dolor
+                dolorem doloribus eos, id illum iusto mollitia, nam neque perspiciatis repudiandae sint. Ipsa nostrum
+                pariatur quaerat?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
+                officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
+                laboriosam officia voluptatem voluptatibus?
+            </p>            <p>
+                kontol
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur, culpa distinctio dolor
+                dolorem doloribus eos, id illum iusto mollitia, nam neque perspiciatis repudiandae sint. Ipsa nostrum
+                pariatur quaerat?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
+                officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
+                laboriosam officia voluptatem voluptatibus?
+            </p>            <p>
+                kontol
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur, culpa distinctio dolor
+                dolorem doloribus eos, id illum iusto mollitia, nam neque perspiciatis repudiandae sint. Ipsa nostrum
+                pariatur quaerat?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
+                officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
+                laboriosam officia voluptatem voluptatibus?
+            </p>            <p>
+                kontol
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur, culpa distinctio dolor
+                dolorem doloribus eos, id illum iusto mollitia, nam neque perspiciatis repudiandae sint. Ipsa nostrum
+                pariatur quaerat?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
+                officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
+                laboriosam officia voluptatem voluptatibus?
+            </p>            <p>
+                kontol
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur, culpa distinctio dolor
+                dolorem doloribus eos, id illum iusto mollitia, nam neque perspiciatis repudiandae sint. Ipsa nostrum
+                pariatur quaerat?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
+                officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
+                laboriosam officia voluptatem voluptatibus?
+            </p>            <p>
+                kontol
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur, culpa distinctio dolor
+                dolorem doloribus eos, id illum iusto mollitia, nam neque perspiciatis repudiandae sint. Ipsa nostrum
+                pariatur quaerat?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
+                officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
+                laboriosam officia voluptatem voluptatibus?
+            </p>            <p>
+                kontol
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur, culpa distinctio dolor
+                dolorem doloribus eos, id illum iusto mollitia, nam neque perspiciatis repudiandae sint. Ipsa nostrum
+                pariatur quaerat?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
+                officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
+                laboriosam officia voluptatem voluptatibus?
+            </p>            <p>
+                kontol
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur, culpa distinctio dolor
+                dolorem doloribus eos, id illum iusto mollitia, nam neque perspiciatis repudiandae sint. Ipsa nostrum
+                pariatur quaerat?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
+                officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
+                laboriosam officia voluptatem voluptatibus?
+            </p>            <p>
+                kontol
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur, culpa distinctio dolor
+                dolorem doloribus eos, id illum iusto mollitia, nam neque perspiciatis repudiandae sint. Ipsa nostrum
+                pariatur quaerat?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
+                officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
+                laboriosam officia voluptatem voluptatibus?
+            </p>            <p>
+                kontol
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur, culpa distinctio dolor
+                dolorem doloribus eos, id illum iusto mollitia, nam neque perspiciatis repudiandae sint. Ipsa nostrum
+                pariatur quaerat?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
+                officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
+                laboriosam officia voluptatem voluptatibus?
+            </p>            <p>
+                kontol
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur, culpa distinctio dolor
+                dolorem doloribus eos, id illum iusto mollitia, nam neque perspiciatis repudiandae sint. Ipsa nostrum
+                pariatur quaerat?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
+                officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
+                laboriosam officia voluptatem voluptatibus?
+            </p>            <p>
+                kontol
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur, culpa distinctio dolor
+                dolorem doloribus eos, id illum iusto mollitia, nam neque perspiciatis repudiandae sint. Ipsa nostrum
+                pariatur quaerat?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid deserunt expedita hic minima
+                officia perferendis provident repellat velit veritatis. Assumenda, beatae dignissimos et fugit id
+                laboriosam officia voluptatem voluptatibus?
             </p>
             <button onClick={() => handleClick('idProduk')} className={'p-1 w-full rounded-md bg-sky-500'}>Go</button>
         </div>

@@ -1,5 +1,5 @@
 import React, {createContext, useContext} from "react";
-import {ChevronFirst, MoreVertical} from "lucide-react";
+import {ChevronFirst} from "lucide-react";
 import {Link} from "react-router-dom";
 // mengubah sidebar menjadi navbar, dan juga membuat rekayasa header supaya dapat di samping, see you lanjut kan, tapi perlu istirahat dulu
 export const SidebarContext = createContext()
@@ -30,12 +30,11 @@ export default function Sidebar({children}) {
                         <a href="/home"
                            className={`text-primary text-center font-bold text-xl md:text-2xl py-6 ${expanded ? 'md:opacity-0' : 'opacity-0 lg:opacity-100 '}`}>0904</a>
                         <div
-                            className={`flex justify-between items-center lg:overflow-hidden transition-all ${expanded ? 'opacity-0 md:opacity-100' : 'w-0 opacity-0'}`}>
+                            className={`flex justify-between items-center lg:overflow-hidden transition-all ${expanded ? 'opacity-0 lg:opacity-100' : 'w-0 opacity-0'}`}>
                             <div className={'leading-2 mb-3 '}>
                                 <h4 className="font-semibold text-green-600">PROJECT</h4>
                                 <span className={'text-xs text-slate-500'}>&copy; Copyright 2024 by 0904</span>
                             </div>
-                            {/*<MoreVertical size={20}/>*/}
                         </div>
                     </div>
                 </nav>
