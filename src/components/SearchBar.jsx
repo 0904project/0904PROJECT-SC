@@ -20,10 +20,10 @@ export default function SearchBar({isSearchOpen}) {
         setSearch(words.filter(w => w.toLowerCase().includes(inputValue)).slice(0,8))
     }
     return (
-            <form action="" className={`w-[500px] right-52  justify-center items-center top-0 ${isSearchOpen ? 'search-mobile' : 'hidden'}  lg:block relative `}>
+            <form action="" className={`w-[500px] right-52 justify-center items-center top-0 ${isSearchOpen ? 'search-mobile' : 'hidden'}  lg:block relative `}>
                 <div className="relative">
                     <input type="search" ref={inputRef} placeholder={'Ketikan disini'}
-                           className={'w-full p-3 rounded-full bg-slate-200 focus:outline-none'} onChange={(e) => handleSearch(e)}/>
+                           className={'w-full p-3 rounded-full bg-slate-200  focus:outline-none'} onChange={(e) => handleSearch(e)}/>
                     <button onClick={handleClick} className={'absolute  right-1 top-1/2 -translate-y-1/2 p-2 bg-slate-300 rounded-full'}>
                         <SearchRoundedIcon/>
                     </button>
