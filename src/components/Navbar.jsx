@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useContext} from 'react'
-import StrollerIcon from '@mui/icons-material/Stroller';
+import {ShoppingCart} from "lucide-react";
 import PersonIcon from '@mui/icons-material/Person';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import {SidebarContext} from "./Sidebar";
@@ -71,7 +71,7 @@ export default function Navbar() {
                                className={'text-primary text-center font-bold text-xl md:text-2xl block py-6 md:hidden'}>0904<span
                                 className={'text-green-600'}>PROJECT</span></a>
                             <span
-                                className={`text-primary  text-center font-bold text-xl ${pathNames.length > 0 ? 'py-7' :'py-10'}  hidden md:block capitalize `}>
+                                className={`text-primary microsoft2:px-3 text-center font-bold text-xl ${pathNames.length > 0 ? 'py-7' :'py-10'}  hidden md:block capitalize `}>
                                 {pathNames.map((value, index) => {
                                     const to = `/${pathNames.slice(0, index + 1).join("/")}`;
                                     const capitalizedValue = value.toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
@@ -109,7 +109,7 @@ export default function Navbar() {
                             <div className={'relative right-28'}>
                                 <i onClick={() => setOpen(true)}
                                    className={'w-8 h-8 items-center justify-center bg-slate-50 rounded-full p-1 absolute active:bg-slate-300'}>
-                                    <StrollerIcon/>
+                                    <ShoppingCart/>
                                 </i>
                             </div>
                             <div className="items-center right-16 lg:left-18 w-8  relative">
@@ -122,17 +122,17 @@ export default function Navbar() {
                     </div>
                 </div>
                 <ListProfile buka={buka}
-                             className={'dropProfile absolute top-[4.5rem] right-16 w-[120px] p-[15px] rounded-md bg-white border-1 border-gray-100 microsoft2:right-10 xl:right-16 max:right-20 '}/>
+                             className={'dropProfile absolute top-[4.5rem] right-2 w-[120px] p-[15px] rounded-md bg-white border-1 border-gray-100 md:right-28 ipad4:right-[4.3rem] microsoft2:right-16  galaxy:right-24 galaxy2:right-6 max:right-16 '}/>
             </header>
             <Notification open={open} onClose={() => setOpen(false)} title="COMING SOON">
                 <div className={'flex flex-wrap'}>
-                    <StrollerIcon style={{
-                        fontSize: '100px',
+                    <ShoppingCart style={{
                         width: '100%',
                         color: 'gray',
                         marginTop: '10px',
                         marginBottom: '10px'
-                    }}/>
+                    }}
+                    size={100}/>
                 </div>
             </Notification>
         </>

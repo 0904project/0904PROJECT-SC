@@ -1,4 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import React, {createContext, useContext} from "react";
+import {useLocation} from "react-router-dom";
 import {ChevronFirst} from "lucide-react";
 import {Link} from "react-router-dom";
 // mengubah sidebar menjadi navbar, dan juga membuat rekayasa header supaya dapat di samping, see you lanjut kan, tapi perlu istirahat dulu
@@ -17,9 +19,9 @@ export default function Sidebar({children}) {
                             window.history.pushState({}, '', '/');
                         }}
                            className={`text-primary text-center font-bold overflow-hidden transition-all ${expanded ? 'w-32 ' : 'w-0'}`}>0904<span
-                            className={'text-green-600'}>PROJECT</span></a>
+                            className={'text-emerald-500'}>PROJECT</span></a>
                         <button onClick={() => setExpanded((curr) => !curr)}
-                                className={`hidden lg:block p-1.5 rounded-lg text-black font-bold  ${expanded ? 'bg-gradient-to-r bg-green-100 hover:bg-green-300' : ''}`}>
+                                className={`hidden lg:block p-1.5 rounded-lg text-black font-bold  ${expanded ? 'bg-gradient-to-r bg-emerald-400 hover:bg-emerald-500' : ''}`}>
                             {expanded ? <ChevronFirst/> : '0904'}
                         </button>
                     </div>
@@ -32,7 +34,7 @@ export default function Sidebar({children}) {
                         <div
                             className={`flex justify-between items-center lg:overflow-hidden transition-all ${expanded ? 'opacity-0 lg:opacity-100' : 'w-0 opacity-0'}`}>
                             <div className={'leading-2 mb-3 '}>
-                                <h4 className="font-semibold text-green-600">PROJECT</h4>
+                                <h4 className="font-semibold text-emerald-600">PROJECT</h4>
                                 <span className={'text-xs text-slate-500'}>&copy; Copyright 2024 by 0904</span>
                             </div>
                         </div>
@@ -43,32 +45,35 @@ export default function Sidebar({children}) {
 }
 
 // eslint-disable-next-line react/prop-types
-export function SidebarItem({icon, text, active, alert,to}) {
-    const {expanded} = useContext(SidebarContext)
+export function SidebarItem({icon, text, alert, to}) {
+    const {expanded} = useContext(SidebarContext);
+    const location = useLocation();
+    const active = location.pathname === to;
+
     return (
         <li className={`relative flex group items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer transition-colors 
         ${
-            active ? 'bg-gradient-to-tr from-green-200 to-indigo-100 text-green-800'
-                : 'hover:bg-green-200 text-gray-600'
+            active ? `bg-gradient-to-tr from-emerald-500 to-indigo-100 text-emerald-800 ${expanded ? '' : 'opacity-0 lg:opacity-100 md:w-full'}`
+                : `hover:bg-emerald-300 text-gray-600 ${expanded ? '' : 'opacity-0 lg:opacity-100'}`
         }`}>
             <Link to={to} className={`flex ${expanded ? ' ' : 'w-0 lg:w-5'} `}>
-            {icon}
-            <span className={`overflow-hidden transition-all ease-in-out ${
-                expanded ? ' w-[1px] ml-0 lg:w-52   lg:ml-3 ' : 'w-0'
-            }`}
-            >
+                {icon}
+                <span className={`overflow-hidden transition-all ease-in-out ${
+                    expanded ? ' w-[1px] ml-0 lg:w-52   lg:ml-3 ' : 'w-0'
+                }`}
+                >
                 {text}
             </span>
             </Link>
             {alert && (
-                <div className={`absolute right-2 w-2 h-2 rounded bg-green-400 ${
+                <div className={`absolute right-2 w-2 h-2 rounded bg-emerald-300 ${
                     expanded ? '' : 'top-2'
                 }`}
                 />
             )}
             {!expanded && (
                 <div
-                    className={'absolute left-full rounded-md px-2 py-1 ml-6 bg-green-300 text-green-800 text-sm invisible opacity-20 -translate-x-3 transition-all group-hover:visible group-hover:opacity-100 group-hover:translate-x-0'}
+                    className={'absolute left-full rounded-md px-2 py-1 ml-6 bg-emerald-300 text-emerald-900 text-sm invisible opacity-20 -translate-x-3 transition-all group-hover:visible group-hover:opacity-100 group-hover:translate-x-0'}
                 >{text}</div>
             )}
         </li>

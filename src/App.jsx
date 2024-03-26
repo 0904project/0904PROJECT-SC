@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, {useState} from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Navbar from "./components/Navbar.jsx";
@@ -19,7 +20,7 @@ function App() {
                         <Navbar />
                     <Sidebar>
                         <SidebarItem icon={<Home size={20}/>} text={'Home'} to='/home'/>
-                        <SidebarItem icon={<Compass size={20}/>} text={'Product'} to='/product' />
+                        <SidebarItem icon={<Compass size={20}/>} text={'Produk'} to='/produk' />
                         <SidebarItem icon={<Bolt size={20}/>} text={'category'} />
                         <SidebarItem icon={<UsersRound size={20}/>} text={'about'} />
                         <SidebarItem icon={<Send size={20}/>} text={'contact'} />
@@ -27,8 +28,8 @@ function App() {
                     <div style={{ flexGrow: 1 }} className={`${expanded ? 'md:pl-[10%] max:pl-[18%] pl-[18%] ' : 'pl-0 lg:pl-[80px]' } `}>
                         <Routes>
                             <Route path="/home" exact Component={LandingPage} />
-                            <Route path="/product" exact Component={Product} />
-                            <Route path='/product/detail' exact Component={DetailProduct} />
+                            <Route path="/produk" exact Component={Product} />
+                            <Route path='/produk/detail' exact Component={DetailProduct} />
                             {/*<Route path="*" element={<NotFoundPage />} />*/}
                         </Routes>
                     </div>
