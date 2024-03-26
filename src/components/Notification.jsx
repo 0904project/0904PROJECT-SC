@@ -13,7 +13,7 @@ export default function Notification({ open, onClose, children, title }){
                     </div>
                         {children}
                     <div className={'flex items-center justify-center'}>
-                        <button onClick={onClose} className={'p-2 mb-10 bg-green-600 w-36 rounded-md text-white cursor-pointer text-xl hover:bg-green-700 '}>Ok</button>
+                        <button onClick={onClose} className={'p-2 mb-10 bg-emerald-500 w-36 rounded-md text-white cursor-pointer text-xl hover:bg-emerald-600 '}>Ok</button>
                     </div>
                 </div>
             </div>

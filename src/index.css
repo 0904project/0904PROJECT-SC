@@ -73,3 +73,13 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
     opacity: 0;
 }
+
+/*animasi 404 cat*/
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
